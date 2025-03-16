@@ -96,6 +96,9 @@
     setSocketVariable = true;
   };
 
+  users.users.mickhat.extraGroups = [ "docker" ];
+
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mickhat = {
     isNormalUser = true;
