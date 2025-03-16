@@ -91,6 +91,11 @@
     FLAKE = "/home/mickhat/dotfiles";
   };
 
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+};
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mickhat = {
     isNormalUser = true;
