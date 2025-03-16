@@ -15,5 +15,6 @@
     nh
     librewolf
     (pkgs.burpsuite.override { proEdition = true; }) 
+    docker
 ];
 }
