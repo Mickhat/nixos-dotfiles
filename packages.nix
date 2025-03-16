@@ -16,5 +16,6 @@
     librewolf
     (pkgs.burpsuite.override { proEdition = true; }) 
     docker
+    docker-compose
 ];
 }
