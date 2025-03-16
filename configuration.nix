@@ -91,10 +91,7 @@
     FLAKE = "/home/mickhat/dotfiles";
   };
 
-  virtualisation.docker.rootless = {
-    enable = true;
-    setSocketVariable = true;
-  };
+  virtualisation.docker.enable = true;
 
   users.users.mickhat.extraGroups = [ "docker" ];
 
