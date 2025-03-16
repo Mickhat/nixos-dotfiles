@@ -3,7 +3,7 @@
 
   inputs = {
     # NixOS official package source, using the nixos unstable branch here
-     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable"
+     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
      nvf.url = "github:notashelf/nvf";
      nvf.inputs.nixpkgs.follows = "nixpkgs";
      stylix.url = "github:danth/stylix";

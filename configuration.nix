@@ -8,6 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./modules/bundles.nix
+      ./packages.nix
     ];
 
   # Bootloader.
