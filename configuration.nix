@@ -27,6 +27,8 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  boot.kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_latest;
+
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
 
@@ -48,7 +50,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  virtualisation.docker.enable = true;
+  
 
   # Enable the XFCE Desktop Environment.
   services.xserver.displayManager.lightdm.enable = true;
@@ -64,7 +66,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
