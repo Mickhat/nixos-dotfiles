@@ -93,14 +93,11 @@
 
   virtualisation.docker.enable = true;
 
-  users.users.mickhat.extraGroups = [ "docker" ];
-
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mickhat = {
     isNormalUser = true;
     description = "mickhat";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
     #  thunderbird
     ];
