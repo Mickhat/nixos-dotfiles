@@ -21,5 +21,7 @@
     python313Full
     ghostty
     pipx
+    signal-desktop
+    signal-cli
 ];
 }
