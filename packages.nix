@@ -24,5 +24,6 @@
     signal-desktop
     signal-cli
     megasync
+    zip
 ];
 }
