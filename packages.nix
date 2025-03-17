@@ -25,5 +25,6 @@
     signal-cli
     megasync
     zip
+    spotify
 ];
 }
