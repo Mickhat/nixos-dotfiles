@@ -92,7 +92,7 @@
   users.users.mickhat = {
     isNormalUser = true;
     description = "mickhat";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "audio"];
     packages = with pkgs; [
     #  thunderbird
     ];
