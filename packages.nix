@@ -20,5 +20,6 @@
     asciiquarium
     python313Full
     ghostty
+    pipx
 ];
 }
