@@ -18,5 +18,7 @@
     docker
     docker-compose
     asciiquarium
+    python313Full
+    ghostty
 ];
 }
