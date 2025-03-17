@@ -23,5 +23,6 @@
     pipx
     signal-desktop
     signal-cli
+    megasync
 ];
 }
