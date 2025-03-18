@@ -26,5 +26,6 @@
     megasync
     zip
     spotify
+    thunderbird
 ];
 }
