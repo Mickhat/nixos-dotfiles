@@ -26,6 +26,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  networking.interfaces.enp5s0.wakeOnLan.enable
 
   boot.kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_latest;
 
