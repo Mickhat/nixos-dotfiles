@@ -14,7 +14,7 @@
     fastfetch
     nh
     librewolf
-    (pkgs.burpsuite.override { proEdition = true; }) 
+    (pkgs.burpsuite.override { proEdition = true; })
     docker
     docker-compose
     asciiquarium
@@ -27,5 +27,5 @@
     zip
     spotify
     thunderbird
-];
+  ];
 }

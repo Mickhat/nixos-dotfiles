@@ -1,6 +1,6 @@
 {
   imports = [
-./nvf.nix
-./stylix.nix
-];
+    ./nvf.nix
+    ./stylix.nix
+  ];
 }
