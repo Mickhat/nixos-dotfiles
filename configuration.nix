@@ -127,12 +127,16 @@
   };
 
   virtualisation.docker.enable = true;
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
+  virtualisation.virtualbox.guest.enable = true;
+  virtualisation.virtualbox.guest.dragAndDrop = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mickhat = {
     isNormalUser = true;
     description = "mickhat";
-    extraGroups = [ "networkmanager" "wheel" "docker" "audio"];
+    extraGroups = [ "networkmanager" "wheel" "docker" "audio" "user-with-access-to-virtualbox"];
     packages = with pkgs; [
     #  thunderbird
     ];
