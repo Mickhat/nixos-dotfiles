@@ -127,16 +127,16 @@
   };
 
   virtualisation.docker.enable = true;
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.virtualbox.host.enableExtensionPack = true
-  virtualisation.virtualbox.guest.enable = true;
-  virtualisation.virtualbox.guest.dragAndDrop = true;
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true
+  services.qemuGuest.enable = true;
+  services.spice-vdagentd.enable = true;  # enable copy and paste between host and gue
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mickhat = {
     isNormalUser = true;
     description = "mickhat";
-    extraGroups = [ "networkmanager" "wheel" "docker" "audio" "user-with-access-to-virtualbox"];
+    extraGroups = [ "networkmanager" "wheel" "docker" "audio" "libvirtd"];
     packages = with pkgs; [
       ];
   };
