@@ -26,7 +26,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-  networking.interfaces.enp5s0.wakeOnLan.enable
+  networking.interfaces.enp5s0.wakeOnLan.enable = true;
 
   boot.kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_latest;
 
@@ -127,6 +127,10 @@
   };
 
   virtualisation.docker.enable = true;
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true
+  virtualisation.virtualbox.guest.enable = true;
+  virtualisation.virtualbox.guest.dragAndDrop = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mickhat = {
@@ -134,8 +138,7 @@
     description = "mickhat";
     extraGroups = [ "networkmanager" "wheel" "docker" "audio" "user-with-access-to-virtualbox"];
     packages = with pkgs; [
-    #  thunderbird
-    ];
+      ];
   };
 
   # Enable automatic login for the user.
