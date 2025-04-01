@@ -27,5 +27,6 @@
     zip
     spotify
     thunderbird
+    kitty
   ];
 }
