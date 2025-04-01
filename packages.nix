@@ -32,5 +32,8 @@
     yazi
     nomacs
     swww
+    hyprpanel
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.ubuntu-mono
   ];
 }

@@ -10,6 +10,7 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     hyprland.url = "github:hyprwm/Hyprland";
+    hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
 
   };
 
@@ -39,6 +40,7 @@
             home-manager.users.mickhat = import ./home.nix;
             home-manager.extraSpecialArgs = { inherit inputs; };
             home-manager.backupFileExtension = "backup";
+            nixpkgs.overlays = [ inputs.hyprpanel.overlay ];
           }
         ];
       };
