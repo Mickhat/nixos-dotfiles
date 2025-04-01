@@ -28,5 +28,7 @@
     spotify
     thunderbird
     kitty
+    wofi
+    yazi
   ];
 }
