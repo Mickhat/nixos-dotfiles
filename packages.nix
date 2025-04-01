@@ -30,5 +30,7 @@
     kitty
     wofi
     yazi
+    nomacs
+    swww
   ];
 }
