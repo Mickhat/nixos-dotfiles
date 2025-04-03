@@ -33,7 +33,14 @@
     nomacs
     swww
     hyprpanel
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.ubuntu-mono
+    grim
+    slurp
+    wl-clipboard
+    swappy
   ];
+
+  fonts.packages = with pkgs; [
+  nerd-fonts.jetbrains-mono
+];
+
 }
