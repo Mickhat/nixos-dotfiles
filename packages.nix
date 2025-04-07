@@ -37,6 +37,7 @@
     slurp
     wl-clipboard
     swappy
+    zed-editor
   ];
 
   fonts.packages = with pkgs; [
